@@ -8,17 +8,19 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import com.google.common.base.CaseFormat;
 
+import net.bytebuddy.agent.builder.AgentBuilder.Ignored;
+
 
 public class MultipleBrowserLaunch{
 public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in);
 	System.out.println("Enter the value");
-String value=sc.nextLine();
+	Scanner sc=new Scanner(System.in);
+    String value=sc.nextLine();
 	switch(value) {
-	case 1:{
+	case ("chrome"):{
 		WebDriver driver=new ChromeDriver();break;
 	}
-	case 2:{
+	case ("edge"):{
 	WebDriver driver=new EdgeDriver();break;
 }
 }
