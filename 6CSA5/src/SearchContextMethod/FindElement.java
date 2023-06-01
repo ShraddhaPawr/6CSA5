@@ -11,5 +11,6 @@ public static void main(String[] args) {
 	driver.get("https://www.instagram.com");
 	driver.findElement(By.tagName("input"));
 	System.out.println("element identified");
+	driver.close();
 }
 }
