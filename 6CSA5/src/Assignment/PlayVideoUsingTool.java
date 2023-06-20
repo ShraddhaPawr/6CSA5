@@ -14,4 +14,4 @@ public static void main(String[] args) {
 		driver.findElement(By.id("search-icon-legacy")).click();
 		driver.findElement(By.xpath("//img[@style=\"background-color: transparent;\"]")).click();
 		}
-	}
+}
